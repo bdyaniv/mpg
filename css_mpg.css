@@ -1,0 +1,61 @@
+/* 
+    Document   : css_mpg
+    Created on : Jul 26, 2012, 9:13:39 AM
+    Author     : YBD
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body {
+background: #99CCFF;
+}
+h3 {
+text-align:center;
+text-shadow: 2px 2px 2px #F0F0F0;
+}
+h3:hover
+{
+/*background-color:yellow;*/
+opacity: 0.6;
+}
+a:hover
+{
+background-color:#FFFF99;
+}
+table {
+    
+}
+table#login {
+    background-color:#B8DBFF;
+}
+tr {
+padding-left:2px;
+}
+tr#menu {
+color:#FFFFFF;
+background-color:#B8E65C; /*#FFD700;*/
+height:200px;
+width:100px;
+float:left;
+}
+tr#content {
+background-color:#EEEEEE;
+height:200px;
+width:400px;
+float:left;
+}
+tr#footer {
+background-color:#70995C; /*#FFA500;*/
+clear:both;
+text-align:center;
+}
+td#content {
+background-color:#FFA500;
+}
+
+p#description {
+    background-color:#C2FFA3;
+}
