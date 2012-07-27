@@ -6,54 +6,68 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>mpG - Register</title>
+        <title>MPG Tracker - Register</title>
+        <link href="css_mpg.css" title="styles for mpG" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-
-<table width="500" border="0">
-<tr>
-<td colspan="2">
-<h1>Registration</h1>
-</td>
-</tr>
+        <h3>MPG Tracker - Register</h3>
+<table width="50%">
 
     <tr id="menu" valign="top">
-<!--Left menu-->
-<td><!-- style="background-color:#FFD700;width:100px;text-align:top;"-->
-Home Page<br />
-Insert new mpG<br />
-Analyse my car<br />
-JavaScript
-</td>
 <!--Content-->
-<td><!-- style="background-color:#eeeeee;height:200px;width:400px;text-align:top;"-->
+<td>
 <form name="frm_register" method="post" action="register.php">
+    <tr><td id="header">Personal Information</td></tr>
     <tr>
-        <td><label for="fname">First Name</label></td><td><input type="text" name="firstname" /></td>
+        <td><label for="frm_register">First Name</label></td><td><input type="text" name="firstname" /></td>
     </tr>
     <tr>
-        <td><label for="lname">Last Name</label></td><td><input type="text" name="lastname" /></td>
+        <td><label for="frm_register">Last Name</label></td><td><input type="text" name="lastname" /></td>
     </tr>
     <tr>
-        <td><label for="email">Email Address</label></td><td><input type="text" name="emailaddress" /></td>
+        <td><label for="frm_register">Email Address</label></td><td><input type="text" name="emailaddress" /></td>
     </tr>
     <tr>
-        <td><label for="username">User Name</label></td><td><input type="text" name="username" /></td>
+        <td><label for="frm_register">User Name</label></td><td><input type="text" name="username" /></td>
     </tr>
     <tr>
-        <td><label for="password">Password</label></td><td><input type="password" name="password" /></td>
+        <td><label for="frm_register">Password</label></td><td><input type="password" name="password" /></td>
     </tr>
-
-<input type="submit" value="Send" />
+<hr/>
+    <tr>
+        <td id="header">Vehicle Information</td>
+    </tr>
+    <tr>
+        <td><label for="frm_register">Vehicle Type</label></td>
+        <td>
+            <select name="drop_vehicle" id="vehicle_type" size="1">
+            <option value="car">Car</option>
+            <option value="truck">Truck</option>
+            <option value="motorcycle">Motorcycle</option>
+            <option value="boat">Boat</option>
+            <option value="jeep">Jeep</option>
+            <option value="plane">Plane</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="frm_register">Make</label></td><td><input type="text" name="make" /></td>
+    </tr>
+    <tr>
+        <td><label for="frm_register">Model</label></td><td><input type="text" name="model" /></td>
+    </tr>
+    <tr>
+        <td><label for="frm_register">Year</label></td><td><input type="text" name="year" /></td>
+    </tr>
+    <tr>
+        <td><label for="frm_register">Current miles driven</label></td><td><input type="text" name="current_miles_driven" /></td>
+    </tr>
+<hr/>
+<input type="submit" value="Register" />
 </form>
 </td>
-</tr>
+    </tr>
 
-<tr>
-    <td colspan="2"><!-- style="background-color:#FFA500;text-align:center;"-->
-Copyright © Yaniv Ben-David
-</td>
-</tr>
 </table>
         
         
